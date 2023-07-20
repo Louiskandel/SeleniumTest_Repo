@@ -1,0 +1,57 @@
+************************************ MVN COMMANDS **************************************
+
+mvn clean -->
+mvn validate
+
+mvn install -DskipTests=true
+
+mvn test
+
+mvn compile
+
+mvn package -DskipTests=true
+
+********************************** DOCKER COMMANDS **************************************
+
+docker images -a -q | % { docker image rm $_ -f } -- Docker remove all images
+docker run -it <image name> sh -- can execute commands inside image
+docker exec -it <container> sh -- can execute inside container
+docker run -p 8050:80 nginx -- Port Mapping between PC and Docker container
+docker run -d -p 8051:80 --rm nginx -- (-d) -Is to run the container in background
+docker ps --- This command is used to list the running containers
+docker ps -a -- This command is used to show all the running and exited containers
+docker system prune -f ---Delete unused containers
+docker system prune -a -- Delete all images
+docker stop container id||container name -- Stops the container
+
+docker run -it -v C:\Users\Asus\Desktop\temp:/abc ubuntu --- volume mapping between directory of container and real pc
+docker run -d --name=nginx nginx --  giving nameto container
+
+docker network create udemy-network -- create a network in docker
+docker run -d --name=nginx --network=udemy-network nginx -- connect network
+docker run -it --network=udemy-network alpine
+docker run -e NUMBER=5 tester79/sqr --run docker with variable pass on
+docker tag tester79/sqr:latest tester79/sqr:release-2.13 --taggging a docker image
+
+Remove single image
+docker rmi image_name:version/image-id
+
+Remove all images
+docker rmi $(docker images -qf "dangling=true")
+
+Delete all docker containers
+docker rm $(docker ps -a -q)
+
+Delete all docker images
+docker rmi $(docker images -q)
+
+Modify docker container contents
+
+1. docker exec -it <container> sh
+2. cd /usr/share/nginx/html
+3. sed -i -e 's/nginx!/<<YOUR NAME>>/g' index.html
+
+************** CUCUMBER COMMANDS*************
+
+mvn clean test -Dcucumber.filter.tags="@InvalidLogin"
+mvn -DskipTests=true  package
