@@ -1,0 +1,13 @@
+org/example/runner/CucumberRunnerTests.class
+org/example/runner/HRM_Cucumber_Runner_Tests.class
+org/example/stepdefinations/LoginPageDefinations.class
+org/example/utils/LocatorSingleton.class
+org/example/UItests/JavaScriptexecutortest.class
+org/example/utils/SingletonBrowserClass.class
+org/example/UItests/SeleniumTest.class
+org/example/UItests/Widgetstest.class
+org/example/UItests/Frame_example.class
+org/example/UItests/Selectclasstest.class
+org/example/apitests/FirstAPITest.class
+org/example/UItests/MouseHoverTests.class
+org/example/stepdefinations/HRM_PageDefination.class

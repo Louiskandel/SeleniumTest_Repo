@@ -59,7 +59,7 @@ public class HRM_PageDefination {
         if (username.equals("zara khan")) {
             Assert.assertTrue(true);
         } else {
-            Assert.fail("Cart don't have exactly 2 items");
+            Assert.fail("Name is not correct");
         }
     }
 
