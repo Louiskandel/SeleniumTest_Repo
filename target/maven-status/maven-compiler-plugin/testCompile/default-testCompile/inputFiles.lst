@@ -1,5 +1,6 @@
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/runner/CucumberRunnerTests.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/utils/SingletonBrowserClass.java
+/Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/stepdefinations/commonStepDefination.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/UItests/Widgetstest.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/stepdefinations/HRM_PageDefination.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/UItests/Selectclasstest.java
@@ -9,5 +10,6 @@
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/stepdefinations/LoginPageDefinations.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/UItests/Frame_example.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/UItests/MouseHoverTests.java
+/Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/staticfields/StaticInstances.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/utils/LocatorSingleton.java
 /Users/louis/Desktop/SeleniumTest_Repo/src/test/java/org/example/UItests/SeleniumTest.java

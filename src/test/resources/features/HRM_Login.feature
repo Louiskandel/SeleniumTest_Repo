@@ -9,6 +9,11 @@ Feature: All test cases for positive & negative scenarios
 
 
 
+
+
+
+
+
   @CheckUsername
   Scenario Outline:
     When user enters username as "<username3>" and password as "<password3>"
@@ -25,12 +30,38 @@ Feature: All test cases for positive & negative scenarios
     Then find recrument
     Then Select "<Job Title>" as "Job Title"
     Then Select "<Vacancy>" as "Vacancy"
+    Then Select "<Hiring Manager>" as "Hiring Manager"
+    Then Select "<Status>" as "Status"
+    Then Select start Date of Application
+
+
 
 
     Examples:
-    |Job Title| Vacancy|
-    |Database Administrator|Senior QA Lead|
+    |Job Title| Vacancy|Hiring Manager|Status|Candidate Name|
+    |Database Administrator|Senior QA Lead|Linda Anderson|Job Offered|ha|
 
+
+    @Leave
+
+    Scenario Outline: Check Leave
+      Then find Leave
+      Then Select "<Employee Name>" as "Employee Name"
+
+
+      Examples:
+        |   | |
+        |  |    |
+
+  @Save
+
+  Scenario Outline: Check Leave
+    Then click save
+
+
+    Examples:
+      |   | |
+      |  |    |
 
 
 
